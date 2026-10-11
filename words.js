@@ -16,7 +16,7 @@ const LABELS = {
 
 const data = {
 greet: [
-["hello (phone)","喂","wèi","喂，请问你是谁？","Hello, who is this?"],
+["hello","你好", "nǐ hǎo", "你好，我是伊沙克。" , "Hello, I'm Ishak." },],
 ["thank you","谢谢","xièxie","谢谢你的帮助。","Thank you for your help."],
 ["you're welcome","不客气","búkèqi","A: 谢谢！B: 不客气。","A: Thanks! B: You're welcome."],
 ["goodbye","再见","zàijiàn","明天见，再见！","See you tomorrow, goodbye!"],
