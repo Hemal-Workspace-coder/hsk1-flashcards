@@ -1,5 +1,5 @@
 const words = [
-  { en: "hello", zh: "你好", pinyin: "nǐ hǎo", exZh: "你好，我是Tom。", exEn: "Hello, I'm Tom." },
+  { en: "hello", zh: "你好", pinyin: "nǐ hǎo", exZh: "你好，我是Tom。", exEn: "Hello, I'm Ishak." },
   { en: "thank you", zh: "谢谢", pinyin: "xièxie", exZh: "谢谢你的帮助。", exEn: "Thank you for your help." },
   { en: "goodbye", zh: "再见", pinyin: "zàijiàn", exZh: "明天见，再见！", exEn: "See you tomorrow, goodbye!" },
   { en: "water", zh: "水", pinyin: "shuǐ", exZh: "我想喝水。", exEn: "I want to drink water." },
