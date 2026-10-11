@@ -44,7 +44,7 @@ function speak(text) {
   const u = new SpeechSynthesisUtterance(text);
   u.lang = "zh-CN";
   u.rate = 0.8;
-  const voice = speechSynthesis.getVoices().find(v => v.lang.startsWith("zh"));
+  const voice = (speechSynthesis.getVoices() || []).find(v => v.lang.startsWith("zh"));
   if (voice) u.voice = voice;
   speechSynthesis.speak(u);
 }
@@ -56,6 +56,6 @@ $("next").onclick = () => { index = (index + 1) % deck.length; render(); };
 $("prev").onclick = () => { index = (index - 1 + deck.length) % deck.length; render(); };
 $("shuffle").onclick = () => { deck.sort(() => Math.random() - 0.5); index = 0; render(); };
 
-speechSynthesis.onvoiceschanged = () => {};
 buildChips();
 render();
+if ("speechSynthesis" in window) speechSynthesis.onvoiceschanged = () => {};
